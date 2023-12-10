@@ -1,0 +1,16 @@
+{
+	"name": "edufree",
+	"version": "1.0.0",
+	"description": "",
+	"main": "",
+	"scripts": {
+		"dev": "npx tailwindcss -i ./asstes/CSS/input.css -o ./asstes/CSS/output.css --watch",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Heru Azy",
+	"license": "ISC",
+	"devDependencies": {
+		"tailwindcss": "^3.3.6"
+	}
+}
