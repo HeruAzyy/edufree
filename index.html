@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,9 +16,81 @@
 
 		<title>EDUFREE</title>
 	</head>
-	<body>
+	<body class="h-[300vh]">
+		<!-- NAVBAR -->
+		<header
+			class="bg-blue fixed top-0 left-0 w-full px-6 flex items-center z-10 transition-all duration-300">
+			<div class="container">
+				<div class="text-white flex items-center justify-between relative">
+					<div>
+						<a href="/" class="font-bold text-xl block py-6">
+							[Educafree]
+						</a>
+					</div>
+
+					<div class="flex items-center">
+						<button
+							id="hamburger"
+							name="hamburger"
+							type="button"
+							class="block absolute right-0 lg:hidden">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								viewBox="0 0 448 512"
+								class="fill-white active:fill-yellow">
+								<path
+									d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+							</svg>
+						</button>
+
+						<nav
+							id="nav-menu"
+							class="hidden absolute -right-6 top-full py-5 font-semibold text-sm text-blue text-center bg-yellow shadow-lg w-1/2 md:w-1/4 lg:block lg:static lg:bg-transparent lg:w-full lg:text-white lg:shadow-none lg:font-normal">
+							<ul class="block lg:flex lg:gap-5 lg:items-center">
+								<li class="group">
+									<a
+										href="#"
+										class="flex text-center justify-center pb-5 active:text-white lg:pb-0 lg:hover:text-yellow">
+										Home
+									</a>
+								</li>
+								<li class="group">
+									<a
+										href="#"
+										class="flex text-center justify-center pb-5 active:text-white lg:pb-0 lg:hover:text-yellow">
+										Tentang Kami
+									</a>
+								</li>
+								<li class="group">
+									<a
+										href="#"
+										class="flex text-center justify-center pb-5 active:text-white lg:pb-0 lg:hover:text-yellow">
+										Kursus
+									</a>
+								</li>
+								<li class="group">
+									<a
+										href="#"
+										class="flex text-center justify-center pb-5 active:text-white lg:pb-0 lg:hover:text-yellow">
+										Blog
+									</a>
+								</li>
+
+								<button
+									type="button"
+									class="border py-2 px-4 rounded-lg font-semibold border-blue text-blue active:bg-blue active:text-white lg:border-yellow lg:text-yellow lg:hover:bg-yellow lg:hover:text-blue">
+									Login
+								</button>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
 		<!-- HERO SECTION -->
-		<section id="home" class="bg-blue px-6">
+		<section id="home" class="bg-blue px-6 pt-10">
 			<div class="container">
 				<div
 					class="flex flex-wrap gap-5 py-20 lg:flex-nowrap lg:items-center">
@@ -75,5 +147,7 @@
 				<p class="font-light text-sm">Kursus gratis</p>
 			</div>
 		</div>
+
+		<script src="./asstes/JS/script.js"></script>
 	</body>
 </html>
