@@ -31,3 +31,7 @@
 .line {
 	@apply after:content-[''] after:block after:rounded-full after:w-0 after:h-0.5 after:bg-yellow hover:after:w-full after:transition-all;
 }
+
+.before {
+	@apply before:content-[''] before:w-10 before:h-1 before:rounded-full before:block before:bg-yellow before:mb-1;
+}
