@@ -23,3 +23,11 @@
 .nav-fixed {
 	@apply shadow-lg;
 }
+
+.active {
+	@apply scale-x-100 origin-right;
+}
+
+.line {
+	@apply after:content-[''] after:block after:rounded-full after:w-0 after:h-0.5 after:bg-yellow hover:after:w-full after:transition-all;
+}

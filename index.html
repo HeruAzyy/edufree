@@ -17,6 +17,88 @@
 		<title>EDUFREE</title>
 	</head>
 	<body class="h-[300vh]">
+		<!-- NAVBAR -->
+		<header
+			class="px-6 w-full flex items-center justify-between fixed top-0 left-0 bg-blue text-white">
+			<div class="container">
+				<div class="flex items-center justify-between relative">
+					<div>
+						<a href="/" class="font-semibold text-lg hover:text-yellow">
+							[Educafree]
+						</a>
+					</div>
+
+					<!-- Nav in mobile -->
+					<nav class="flex items-center justify-between py-5 lg:hidden">
+						<button id="btn-menu" type="button">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								viewBox="0 0 448 512"
+								class="fill-white">
+								<path
+									d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+							</svg>
+						</button>
+
+						<ul
+							id="nav-menu"
+							class="bg-yellow text-black rounded-l-lg shadow-lg font-semibold text-center py-5 px-10 absolute -right-6 top-full scale-x-0 origin-right transition-all">
+							<li class="py-2">
+								<a href="#home" class="active:text-white">Home</a>
+							</li>
+							<li class="py-2">
+								<a href="#about" class="active:text-white">
+									Tentang kami
+								</a>
+							</li>
+							<li class="py-2">
+								<a href="#kursus" class="active:text-white">Kursus</a>
+							</li>
+							<li class="py-2">
+								<a href="#blog" class="active:text-white">Blog</a>
+							</li>
+
+							<button
+								type="button"
+								class="py-2 px-5 mt-5 bg-blue rounded-md text-white active:scale-95">
+								Login
+							</button>
+						</ul>
+					</nav>
+
+					<!-- Nav in desktop -->
+					<nav
+						class="hidden lg:flex lg:items-center lg:justify-between lg:py-5">
+						<ul class="flex items-center justify-between gap-6">
+							<li>
+								<a href="#home" class="hover:text-yellow line">Home</a>
+							</li>
+							<li>
+								<a href="#about" class="hover:text-yellow line">
+									Tentang kami
+								</a>
+							</li>
+							<li>
+								<a href="#kursus" class="hover:text-yellow line">
+									Kursus
+								</a>
+							</li>
+							<li>
+								<a href="#blog" class="hover:text-yellow line">Blog</a>
+							</li>
+
+							<button
+								type="button"
+								class="bg-transparent border-2 border-white rounded-lg text-white py-2 px-5 hover:bg-yellow hover:border-yellow hover:text-blue active:scale-95 transition">
+								Login
+							</button>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
 		<!-- HERO SECTION -->
 		<section id="home" class="bg-blue px-6 pt-10">
 			<div class="container">
