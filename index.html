@@ -14,12 +14,15 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
 			rel="stylesheet" />
 
+		<!-- AOS -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 		<title>Edufree</title>
 	</head>
 	<body>
 		<!-- NAVBAR -->
 		<header
-			class="px-6 w-full flex items-center justify-between fixed top-0 left-0 bg-blue text-white">
+			class="px-6 w-full flex items-center justify-between fixed top-0 left-0 bg-blue text-white z-50">
 			<div class="container">
 				<div class="flex items-center justify-between relative">
 					<div>
@@ -104,7 +107,9 @@
 			<div class="container">
 				<div
 					class="flex flex-wrap gap-5 py-20 lg:flex-nowrap lg:items-center">
-					<div class="w-full text-white flex flex-wrap md:w-3/4 lg:w-1/2">
+					<div
+						class="w-full text-white flex flex-wrap md:w-3/4 lg:w-1/2"
+						data-aos="fade-right">
 						<h1 class="pb-5 leading-snug text-3xl lg:text-4xl">
 							Bangun dan Wujudkan Cita Bersama EDUFREE.
 						</h1>
@@ -136,7 +141,9 @@
 						</div>
 					</div>
 
-					<div class="flex justify-center w-full pt-6 lg:pt-0 lg:w-1/2">
+					<div
+						class="flex justify-center w-full pt-6 lg:pt-0 lg:w-1/2"
+						data-aos="fade-left">
 						<img
 							src="./asstes/img/hero.png"
 							alt="Hero Ilustration"
@@ -162,7 +169,7 @@
 		</div>
 
 		<!-- ABOUT SECTION -->
-		<section id="about" class="px-6 pt-20">
+		<section id="about" class="px-6 pt-20" data-aos="fade-in">
 			<div class="container">
 				<div
 					class="flex w-full flex-wrap md:flex-nowrap md:gap-5 md:items-center md:justify-between">
@@ -186,7 +193,7 @@
 			</div>
 		</section>
 
-		<section class="w-full flex px-6">
+		<section class="w-full flex px-6" data-aos="fade-in">
 			<div class="container">
 				<div class="text-center pt-16 pb-5">
 					<h3>Keuntungan Bergabung Dengan E-Learning EDUFREE</h3>
@@ -256,7 +263,7 @@
 		</section>
 
 		<!-- COURSE SECTION -->
-		<section id="kursus" class="pt-20 px-6">
+		<section id="kursus" class="pt-20 px-6" data-aos="fade-in">
 			<div class="container">
 				<div class="flex justify-between items-center">
 					<h3>Rekomendasi Kursus</h3>
@@ -373,7 +380,7 @@
 				</div>
 
 				<!-- Form course -->
-				<div class="mt-10 grid md:grid-cols-2">
+				<div class="mt-10 grid md:grid-cols-2" data-aos="fade-in">
 					<div class="" style="background-image: url(asstes/img/form.jpg)">
 						<div
 							class="bg-blue/50 flex items-center flex-wrap w-full px-10 py-7 h-full text-white">
@@ -441,7 +448,7 @@
 		</section>
 
 		<!-- BLOG SECTION -->
-		<section id="blog" class="pt-20 px-6">
+		<section id="blog" class="pt-20 px-6" data-aos="fade-in">
 			<div class="container">
 				<div class="flex justify-between items-center">
 					<h3>Blog Kami</h3>
@@ -628,5 +635,14 @@
 		</div>
 
 		<script src="./asstes/JS/script.js"></script>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 1000,
+				once: true,
+				offset: 200
+			});
+		</script>
 	</body>
 </html>
